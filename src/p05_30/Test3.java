@@ -1,8 +1,12 @@
 package p05_30;
 
+import java.util.Scanner;
+
 public class Test3 {
 	public static void main(String[] args) {
-		int score = 77;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("점수 입력하삼>>");
+		int score = sc.nextInt();
 
 		if (score >= 90 && score <= 100) {
 			System.out.println("A등급");
