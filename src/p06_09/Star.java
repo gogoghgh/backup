@@ -50,7 +50,7 @@ public class Star {
 			System.out.println();
 		}
 
-		System.out.println("------------피라미드(구글)");
+		System.out.println("------------피라미드(구글..)");
 		for (int i = 1; i < 6; i++) {
 			for (int j = 5; j > i; j--) {
 				System.out.print(" ");
@@ -64,7 +64,16 @@ public class Star {
 		System.out.println("-----------피라미드(역)");
 //		for (int i = 0; i < 4; i++) {
 //			for (int j=0; j < )
-//	}
+//		}
+		for (int i = 4; i > 0; i--) { // 아래쪽 삼각형
+			for (int j = 5; j > i; j--) {
+				System.out.print(" ");
+			}
+			for (int j = 1; j <= i * 2 - 1; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 
 	}
 }
