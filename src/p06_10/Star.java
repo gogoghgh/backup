@@ -1,4 +1,4 @@
-package p06_09;
+package p06_10;
 
 // º° Âï±â ¼÷Á¦..
 public class Star {
