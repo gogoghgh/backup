@@ -6,20 +6,37 @@ public class Student3Test {
 		Student3 s3 = new Student3(); // 객체 생성 완
 		s3.studentID = 12345;
 		s3.studentName = "가현스";
+//		s3.koreanScore = 90;
+		
+		
+		
 
 		Subject kSub = new Subject();
 		kSub.SubjectName = "국어";
+		kSub.scorePoint = 90;
 		Subject mSub = new Subject();
 		mSub.SubjectName = "수학";
-
+		// 이 단계 먼저 거쳐야 --> s3.korean = kSub; 할 수있음
+		
+		s3.korean = kSub;
+		s3.math = mSub;
+		
+		System.out.println("국어 점수 "+ s3.korean.scorePoint); //90 출력!!
+		
+		
+		//최종!!! 
+		// s3 객체 생성 -> Student3 멤변 중에 koreanScore에 90점 대입하고 싶은데 안 됨,, 
+		// koreanScore는 Subject 클래스 타입이라서!!!
+		// Subject 클래스 설계도 보고 kSub, mSub라는 참조변수 만들어서 new 해서 각각 객체 생성
+		// 
+		
 //		s3.korean = new Subject();
 //		s3.math = new Subject();
 //				//'Subject타입'인 korean 멤버 변수,, 기본 타입은 아니죠~ 개발자가 설계한 타입임
 //				//subject타입의 값은? 객체임.. new subject임.. 객체 생성한 subject...?
 //		//Subject ... = new Subject(); 니까!!!
 //					// 	 ㄴ 대입한 이게 값임.....
-		s3.korean = kSub;
-		s3.math = mSub;
+
 
 		System.out.println(s3.studentID);
 		System.out.println(s3.studentName);
