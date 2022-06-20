@@ -5,6 +5,5 @@ public class Student3 {
 	String studentName; //Sting 타입의 멤버변수 studentName;
 	Subject korean; //Subject class 타입의 멤버변수 korean..
 	Subject math; //subject class 타입의 멤버변수 math
-	Subject koreanScore;
 
 }

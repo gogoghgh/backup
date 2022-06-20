@@ -13,7 +13,7 @@ public class ManTest {
 		System.out.println("나이: " + m1.getAge());
 		System.out.println("이름: " + m1.getName());
 		System.out.println("결혼 여부: " + m1.getIsMarried());
-		System.out.println("자녀 수: " + m1.kidsNum);
+		System.out.println("자녀 수: " + m1.getKidsNum());
 
 	}
 }
