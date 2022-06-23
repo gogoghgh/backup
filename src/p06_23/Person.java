@@ -9,8 +9,9 @@ public class Person {
 
 	
 	//생성자
-	Person(String name) {
+	Person(String name, int money) {
 		this.name = name;
+		this.money = money;
 	}
 
 	
@@ -27,10 +28,9 @@ public class Person {
 	
 	// 커피 사는 메서드,,,,,,,,, 
 	// 내 돈은 - / 카페 수입은 +
-//	public void buyCoffee(CoffeeShop cs) {
-//		cs.takeMoney(cs.orderPrice); 
-//		this.money -= cs.orderPrice;
-//	}
+	public int buyCoffee(CoffeeShop cs) {
+		return this.money -= cs.orderPrice;
+	}
 
 //	public void take(int money) {
 

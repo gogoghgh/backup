@@ -18,15 +18,16 @@ public class CoffeeShop {
 		return this.drink;
 	}
 
-	//메서드 --- 주문 가격
+	//메서드 --- 주문 가격 & 지금까지 매출
 	public void setMenu(int orderPrice) {
-		this.orderPrice = orderPrice; 
-	}
-	
-	//메서드 --- 하나 팔고 수입+
-	public void takeMoney() {
+		this.orderPrice = orderPrice;
 		this.takeMoney += orderPrice;
 	}
+	
+//	//메서드 --- 하나 팔고 수입+
+//	public void takeMoney() {
+//		this.takeMoney += orderPrice;
+//	}
 	
 
 	public String showInfo() {
