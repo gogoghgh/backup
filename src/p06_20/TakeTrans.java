@@ -44,6 +44,10 @@ public class TakeTrans {
 		studentGH.takeTaxi(taxi1957);
 		studentGH.showInfo(); // 48500 - 10000
 		taxi1957.showInfo(); // 20000, 2Έν
+		
+		System.out.println(Math.random());
+		
+		
 
 	}
 
