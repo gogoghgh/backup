@@ -17,7 +17,8 @@ public class TakeTrans {
 		System.out.println();
 
 		studentKim.takeBus(bus100); // 'Bus 클래스 타입'인 'bus100 객체 변수'!!! 니까 들어올 수 있는 거임
-		//studentKim.takeBus(new Bus(20)); 이렇게도 가능하긴 함... Bus클래스 타입의 값이 맞긴 하니까,, 근데 밑에 showInfo 메서드 쓰려면 ~~ ^^;
+		// studentKim.takeBus(new Bus(20)); 이렇게도 가능하긴 함... Bus클래스 타입의 값이 맞긴 하니까,, 근데 밑에
+		// showInfo 메서드 쓰려면 ~~ ^^;
 		studentKim.showInfo(); // 잔액 2000
 		bus100.showInfo(); // 총 수입 2000, 승객2
 		System.out.println();
@@ -44,10 +45,6 @@ public class TakeTrans {
 		studentGH.takeTaxi(taxi1957);
 		studentGH.showInfo(); // 48500 - 10000
 		taxi1957.showInfo(); // 20000, 2명
-		
-		System.out.println(Math.random());
-		
-		
 
 	}
 
