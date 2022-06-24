@@ -1,4 +1,4 @@
-package p06_20;
+package p06_20.takeTrans;
 
 public class Bus {
 	int busNumber;

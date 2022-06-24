@@ -1,6 +1,6 @@
-package p06_23;
+package p06_23.p197_Q5_cafe;
 
-public class PersonCoffeShopTest {
+public class PersonCafeTest {
 
 	public static void main(String[] args) {
 		Person kim = new Person("김씨", 10000);
@@ -13,56 +13,57 @@ public class PersonCoffeShopTest {
 		Cafe bbaek = new Cafe("빽다방");
 
 		// 김씨
-		kim.buyDrink(star);
 		star.setOrder("아메리카노", 4000);
+		kim.buyDrink(star);
 		System.out.println(kim.showInfo());
 		System.out.println(star.showInfo());
-		// ㄴ void 타입이면 안 됨~~~ String 타입이어야 함
-		// 엥 그러면 taketrans 할 때 맨 밑에 정보 그거는?
+		// ㄴ sysout 안에 넣을거면!! void 타입이면 안 됨~~~ String 타입이어야 함
+		// 엥 그러면 TakeTrans(06_20) 할 때 맨 밑에 정보 그거는? 
+		// -> void여서 sysout 없이 걍 바로 메서드 호출
 		System.out.println(star.moneyInfo());
-		System.out.println(kim.moneyInfo());
+		kim.moneyInfo();
 		System.out.println();
 
 		// 이씨
-		lee.buyDrink(bean);
 		bean.setOrder("카페라떼", 4500);
+		lee.buyDrink(bean);
 //		bean.setDrinkMenu("라떼");
 //		bean.makeMoney(4500);
 		System.out.println(lee.showInfo());
 		System.out.println(bean.showInfo());
 		System.out.println(bean.moneyInfo());
-		System.out.println(lee.moneyInfo());
+		lee.moneyInfo();
 		System.out.println();
 
 		// 유씨
-		you.buyDrink(bbaek);
 		bbaek.setOrder("콜드브루", 3000);
+		you.buyDrink(bbaek);
 //		bbaek.setDrinkMenu("콜드브루");
 //		bbaek.makeMoney(3000);
 		System.out.println(you.showInfo());
 		System.out.println(bbaek.showInfo());
 		System.out.println(bbaek.moneyInfo());
-		System.out.println(you.moneyInfo());
+		you.moneyInfo();
 		System.out.println();
 
 		// 박씨
-		park.buyDrink(bbaek);
 		bbaek.setOrder("아바라", 4000);
+		park.buyDrink(bbaek);
 //		bbaek.setDrinkMenu("아바라");
 //		bbaek.makeMoney(4000);
 		System.out.println(park.showInfo());
 		System.out.println(bbaek.showInfo());
 		System.out.println(bbaek.moneyInfo());
-		System.out.println(park.moneyInfo());
+		park.moneyInfo();
 		System.out.println();
 		
 		// 김씨2
-		kim.buyDrink(star);
 		star.setOrder("초코칩 프라푸치노", 6000);
+		kim.buyDrink(star);
 		System.out.println(kim.showInfo());
 		System.out.println(star.showInfo());
 		System.out.println(star.moneyInfo());
-		System.out.println(kim.moneyInfo());
+		kim.moneyInfo();
 		System.out.println();
 
 		

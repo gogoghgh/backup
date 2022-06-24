@@ -1,4 +1,4 @@
-package p06_20;
+package p06_20.takeTrans;
 
 import java.util.Scanner;
 
