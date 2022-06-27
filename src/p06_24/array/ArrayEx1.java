@@ -54,14 +54,17 @@ public class ArrayEx1 {
 
 		for (int i = 0; i < alphabets.length; i++, ch2++) { // i= 0~25까지 돈다
 			alphabets[i] = ch2;
-			// i  =   0   1   2   3 ..  
-			// ch2 = 65  66  67  68
+			// i  =   0   1   2   3 ..   25
+			// ch2 = 65  66  67  68 ..   90
 		}
 
 		for (int i = 0; i < alphabets.length; i++) { // i= 0~25까지 돈다
 			System.out.println(alphabets[i] + ", " + (int) alphabets[i]); // 문자 , 숫자..
 			
 		}
+		
+		System.out.println("----------------");
+		System.out.println("----------------");
 
 	} // main 끝
 
