@@ -23,19 +23,20 @@ public class ArrayListEx2 {
 				lotto.add(num);
 			}
 		}
-		
-		//끄집어내기~~~
+
+		// 끄집어내기~~~
 		for (int i = 0; i < lotto.size(); i++) {
 			System.out.print(lotto.get(i) + " ");
 		}
 		System.out.println();
-		
-		//배열일 때는 Arrays... 얘는 Collections로 정렬~~ 
+
+		// 배열일 때는 Arrays... 얘는 Collections로 정렬~~
 		Collections.sort(lotto);
-		
-		//안에 내용물 보기
-		for ( int data : lotto) System.out.print(data + " ");
-		
+
+		// 안에 내용물 보기
+		for (int data : lotto)
+			System.out.print(data + " ");
+
 		System.out.println();
 
 	}// main
