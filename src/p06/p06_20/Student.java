@@ -1,15 +1,20 @@
 package p06.p06_20;
 
-public class Student2_1 {
+public class Student {
 	public static int serialNum = 1000; // static 변수는 인스턴스 생성과 상관 없이 먼저! 생성됨
 	public int studentID;
 	public String studentName;
 	public int grade;
 	public String address;
 
-	public Student2_1() {
+	public Student() {
 		serialNum++;
 		studentID = serialNum;
+	}
+	
+	public Student(int studentID, String studentName) {
+		this.studentID = studentID;
+		this.studentName = studentName;
 	}
 
 	public String getStudentName() {
