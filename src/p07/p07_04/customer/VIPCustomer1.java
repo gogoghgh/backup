@@ -32,4 +32,9 @@ public class VIPCustomer1 {
 		return customerName + "님의 등급은 " + customerGrade + "이며, " + 
 				"보너스 포인트는 " + bonusPoint + "입니다.";
 	}
+	
+	public String getCustomerName() {
+		return customerName;		
+	}
+	
 }

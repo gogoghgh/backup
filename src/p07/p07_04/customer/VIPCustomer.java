@@ -7,9 +7,20 @@ public class VIPCustomer extends Customer{
 	private int agentID;
 	double saleRatio;
 	
-	public VIPCustomer() {
+	public VIPCustomer(int customerID, String customerName, int bonusPoint) {
+		this.customerID = customerID; // super.customerID도 ㅇㅋ
+		this.customerName = customerName;
+		this.bonusPoint = bonusPoint;
+		
 		customerGrade = "VIP"; // 얘는 상위 클래스에서 private 변수이므로 오류 발생
 								// so protected로 바꿨음~~~
+		bonusRatio = 0.05;
+		saleRatio = 0.1;
+		System.out.println("VIPCustomer 생성자 (자식) ");
+	}
+	
+	public VIPCustomer() {
+		customerGrade = "VIP"; 
 		bonusRatio = 0.05;
 		saleRatio = 0.1;
 		System.out.println("VIPCustomer 생성자 (자식) ");
