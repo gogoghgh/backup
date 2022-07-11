@@ -9,8 +9,8 @@ public class ArrayEx3P {
 		Random rand = new Random();
 
 		for (int i = 0; i < lotto.length; i++) {
-			int num = rand.nextInt(45) + 1;
-			System.out.println(num);
+			int num = rand.nextInt(45) + 1; //0부터 시작이라서
+			System.out.println("num: " + num);
 			boolean isContain = false;
 
 			for (int j = 0; j < i; j++) {
