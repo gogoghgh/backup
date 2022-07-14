@@ -25,4 +25,13 @@ public class CompleteCalc extends Calculator {
 	public void showinfo() {
 		System.out.println("Calc 인터페이스를 구현하였습니다^^");
 	} // CompleteCalc에서 추가로 구현한 메서드
+	
+	
+	//디폴트 메서드도 재정의 가능한
+//	@Override
+//	public void description() {
+//		System.out.println("재정의한 디폴트 메서드");
+//	}
+	
+	
 }
