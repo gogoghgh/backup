@@ -30,6 +30,12 @@ public class CustomerTest {
 			// 900원이어야 하는데,,, 메서드는 우리가 안 바꿔서 그대로 ㅠ 억울해~~~ 
 			// 오버라이딩 =재정의해서 해결 완
 		System.out.println(c2.showCustomerInfo());
+		System.out.println();
+		
+		System.out.println("----- toString 재정의----");
+		System.out.println(c1);
+		System.out.println(c2);
+		System.out.println(c3); //엇 얘는 왜?! 왜냐면,, 상속 X 
 		
 	}
 
