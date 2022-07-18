@@ -2,11 +2,11 @@ package object;
 
 import java.util.Objects;
 
-public class Student {
+public class Student_1 {
 	String name;
 	String sn;
 
-	Student(String name, String sn) {
+	Student_1(String name, String sn) {
 		this.name = name;
 		this.sn = sn;
 	}
@@ -33,18 +33,17 @@ public class Student {
 //		return false;
 //	}
 //  이런 equals 쉽게 하라고~~ source에 이미 만들어 놨음.. 
-	
+
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) //같은 메모리값 = 같은 값..
-			return true; 
-		if (obj == null) //null값이면 무조건 false
+		if (this == obj) // 같은 메모리값 = 같은 값..
+			return true;
+		if (obj == null) // null값이면 무조건 false
 			return false;
-		if (getClass() != obj.getClass()) 
+		if (getClass() != obj.getClass())
 			return false;
 		Student other = (Student) obj; // down casting..
-		return Objects.equals(name, other.name) && Objects.equals(sn, other.sn);
-	} // ????/????? 띠용~~~~~^^;;; 
-	
+		return Objects.equals(name, other.name) && Objects.equals(sn, other.sn); 왜 오류나냐,, 슬프게
+	} // ????/????? 띠용~~~~~^^;;;
 
 }
