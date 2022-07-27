@@ -1,6 +1,8 @@
 package chapter12.collection.arraylist;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+
 import chapter12.collection.Member; // Member 클래스는 collection 패키지에 있으므로, 사용하려면 import..
 
 public class MemberArrayList {
@@ -27,18 +29,32 @@ public class MemberArrayList {
 	// remove하는 메서드
 	// ArrayList에서 해당 아이디를 가진 회원을 찾아 제거함
 	public boolean removeMember(int memberID) {
-		for (int i = 0; i < arrayList.size(); i++) {
-			Member member = arrayList.get(i); // get()메서드로 회원을 순차적으로 가져옴
-			int tempID = member.getMemberID(); // 제거 하기 전,, 체크하는 용도의 임시 ID..?
-				// 찐 멤버 ID를 Member 클래스에서 getMemberID로 가져와서, tempID에 넣음~
-				// tempID(=찐 ID), 멤변으로 들어온 memberID랑 비교!!!
-			if (tempID == memberID) { // 회원 아이디(tempID)가 들어온 매개변수(memberID)와 일치하면
-				arrayList.remove(i); // 해당 회원을 삭제
+//		for (int i = 0; i < arrayList.size(); i++) {
+//			Member member = arrayList.get(i); // get()메서드로 회원을 순차적으로 가져옴
+//			int tempID = member.getMemberID(); // 제거 하기 전,, 체크하는 용도의 임시 ID..?
+//				// 찐 멤버 ID를 Member 클래스에서 getMemberID로 가져와서, tempID에 넣음~
+//				// tempID(=찐 ID), 멤변으로 들어온 memberID랑 비교!!!
+//			if (tempID == memberID) { // 회원 아이디(tempID)가 들어온 매개변수(memberID)와 일치하면
+//				arrayList.remove(i); // 해당 회원을 삭제
+//				return true;
+//			}
+//		} // for
+		
+//		---------------------- Iterator 사용해서 -----------------------
+//		p422		
+		Iterator<Member> ir =  arrayList.iterator(); // Iterator 반환
+		while(ir.hasNext()) {  // 요소가 있는 동안
+			Member member = ir.next();
+			int tempID = member.getMemberID();
+			if(tempID == memberID) {  // 회원 아이디가 매개변수와 일치하면
+				arrayList.remove(member); // 해당 회원 삭제
 				return true;
 			}
-		} // for
+		}
+		
 		System.out.println(memberID + "가 존재하지 않습니다"); 
 			//반복문이 끝날 때까지 매개변수로 들어온 아이디를 찐 멤버 아이디 list에서 찾지 못한 경우
+			// Iterator  --> 끝날 때까지 삭제하려는 값을 찾지 못한 경우 
 		return false;
 	} // removeMember
 	
