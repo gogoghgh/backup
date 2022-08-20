@@ -13,6 +13,7 @@ public class MyMathTest {
 		System.out.println("subtract(5l, 3l) = " + result2);
 		System.out.println("multiply(5l, 3l) = " + result3);
 		System.out.println("divide(5l, 3l) = " + result4);
+		System.out.println("³ª´©±â(5l, 3l) = " + result4);
 	}// main
 
 }
