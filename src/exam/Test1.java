@@ -1,6 +1,6 @@
 package exam;
 
-public class Q1 {
+public class Test1 {
 
 	public static void main(String[] args) {
 		int sum = 0;
